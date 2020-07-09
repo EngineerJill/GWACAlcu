@@ -1,4 +1,4 @@
-# new-poj
+# GWA Calculator
 
 ## Project setup
 ```
