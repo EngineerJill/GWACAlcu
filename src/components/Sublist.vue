@@ -73,7 +73,7 @@ export default {
                 {
                 id: 4,
                 year: '2nd',
-                sem: '1st',
+                sem: '2nd',
                 subjects: [
                         {sub:'Fundamentals of Electronics Circuit', units: 4},  
                         {sub:'Ethics', units: 3},
