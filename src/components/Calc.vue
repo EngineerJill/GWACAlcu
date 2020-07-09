@@ -433,6 +433,11 @@ export default {
         .li-white-space {
             margin-left: 100px;
         }
+        
+         .add-button {
+            left: 100px;
+            top: 150px;
+        }
     }
 
     
