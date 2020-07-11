@@ -4,9 +4,9 @@
             <div class='main-calc-box'>
                 <div class="calc-box">
                     <p class="grades-text">Grades</p>
-                    <input v-model="newGrade" placeholder="Please input grade (e.g. 1.0)" type="number" class="grade-input">
+                    <input v-model="newGrade" placeholder="Input Grades" type="number" class="grade-input">
                     <p class="units-text">Equivalent Units</p>
-                    <input v-model="newUnit" placeholder="Please input units (e.g. 1)" type="number" class="unit-input" @keyup.enter="addValues(); calculateGWA()">
+                    <input v-model="newUnit" placeholder="Input Units" type="number" class="unit-input" @keyup.enter="addValues(); calculateGWA()">
                     <button class="add-button" v-on:click="addValues(); calculateGWA()" v-bind:disabled="isDisableded" v-bind:class="{disabled: isDisableded}">ADD</button>
                     <p class="error1" :style="{display : showError}">Grades must be higher than or equal to 1.0 or less than 5.1</p>
                     <p class="error2" :style="{display : showError3}">Units must be higher than or equal to 1</p>
@@ -119,7 +119,7 @@ export default {
 
 <style>
 
-    * {
+     * {
         outline: none;
         
     }
@@ -136,36 +136,38 @@ export default {
         position: relative;
         height: 200px;
         width: 600px;
-        border: 2px solid #07689F;
         text-align: center;
         margin-top: 0;
-        border-radius: 15px;
         margin-right: auto;
         margin-left: auto;
+        background-color: white;
+        box-shadow: 0px 1px 2px #BAC1C5;
+        border-top: solid 8px #07689F;
+
     }
 
     .grade-input {
         position: absolute;
         height: 30px;
-        border-radius: 10px;
+        border-radius: 3px;
         border: 1px solid #07689F;
         top: 30%;
         left: 70px;
         width: 205px;
         padding-left: 10px;
-        background-color: rgb(237, 245, 253);
+        background-color: white;
     }
 
     .unit-input {
         position: absolute;
         height: 30px;
-        border-radius: 10px;
+        border-radius: 3px;
         border: 1px solid #07689F;
         top: 30%;
         right: 70px;
         width: 205px;
         padding-left: 10px;
-        background-color: rgb(237, 245, 253);
+        background-color: white;
     }
 
     .grades-text {
@@ -173,6 +175,7 @@ export default {
         top: 20%;
         font-size: 0.9rem;
         left: 70px;
+        color: #44484A;
     }
 
     .units-text {
@@ -180,6 +183,7 @@ export default {
         top: 20%;
         font-size: 0.9rem;
         left: 315px;
+        color: #44484A;
     }
 
     .add-button {
@@ -189,7 +193,7 @@ export default {
         height: 30px;
         width: 100px;
         left: 250px;
-        border-radius: 25px;
+        border-radius: 5px;
         border: 2px solid #07689F;
         background-color: #07689F;
         color: white;
@@ -198,7 +202,6 @@ export default {
 
     .gwa-text {
         text-align: center;
-        margin-top: 30px;
     }
 
     .gwa-final {
@@ -208,18 +211,20 @@ export default {
     .grades-list {
         position: relative;
         width: 600px;
-        border: 2px solid #07689F;
         text-align: center;
         margin-top: 40px;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 15px;
+        box-shadow: 0px 1px 2px #BAC1C5;
+        background-color: white;
+        border-top: solid 8px #07689F;
     }
 
     .grades-text2, .units-text2 {
         top: 5px;
         position: absolute;
         font-size: .9rem;
+        color: #44484A;
     }
 
     .grades-text2 {
@@ -236,7 +241,6 @@ export default {
         text-decoration: none;
         left: 185px;
         top: 40px;
-        font-weight: bold;
         font-size: 1.2rem ;
     }
 
@@ -291,7 +295,7 @@ export default {
 
 
     .disabled {
-        background-color: gray;
+        background-color: #BAC1C5;
         border: none;
     }
 
@@ -305,7 +309,7 @@ export default {
         bottom: 94px;
         left: 74px;
         font-size: .5rem;
-        color:green;
+        color: green;
     }
 
 
@@ -315,7 +319,7 @@ export default {
         bottom: 94px;
         left: 320px;
         font-size: .5rem;
-        color:green;
+        color: green;
     }
 
     .component-sublist {
@@ -323,10 +327,10 @@ export default {
     }
 
     .up-box {
-        background-color: rgb(237, 245, 253);
+        background-color: #FAFAFA;
         padding-bottom: 5%;
-        margin-top: 0;
-        padding-top: 5%;
+        padding-top: 8%;
+        height: 100vh;
     }
 
     @media (max-width: 657px){
@@ -433,12 +437,13 @@ export default {
         .li-white-space {
             margin-left: 100px;
         }
-        
+
          .add-button {
             left: 100px;
             top: 150px;
         }
     }
 
+    
     
 </style>
