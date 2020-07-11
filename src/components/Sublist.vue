@@ -118,8 +118,6 @@ export default {
         width: 400px;
         background-color: #07689F;
         height: 40px;
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
         color: white;
         top: 0;
     }
@@ -146,13 +144,12 @@ export default {
     }
 
     .container {
-        position: relative;
+         position: relative;
         margin-top: 1%;
         margin-left: 2.5%;
         width: 400px;
         height: 400px;
-        border: 2px solid #07689F;
-        border-radius: 15px;
+        box-shadow: 0px 1px 2px #BAC1C5;
         text-align: center;
         margin: 2% auto;
     }
