@@ -1,5 +1,6 @@
 <template>
     <div class="main-box">
+        <h1>HELLO WORLD</h1>
         <div class="up-box">
             <div class='main-calc-box'>
                 <div class="calc-box">

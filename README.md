@@ -1,4 +1,4 @@
-# GWA Calculator
+# GWA Calculator (College Average)
 
 ## Project setup
 ```
